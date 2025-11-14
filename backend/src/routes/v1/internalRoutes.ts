@@ -1,11 +1,9 @@
 import { Router } from 'express';
+import noteRoutes from './noteRoutes';
 
 const router = Router();
 
 // --- INTEGRATION POINT FOR NEW FEATURES ---
-// Feature-specific routes will be imported and used here.
-// Example:
-// import noteRoutes from './noteRoutes';
-// router.use('/notes', noteRoutes);
+router.use('/note', noteRoutes);
 
 export default router;
